@@ -13,6 +13,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -32,6 +33,7 @@
 
 
 **Emmanuel Bassey | Portfolio** is a clean, responsive showcase of my work as a web developer. It highlights my skills, projects, and professional journey in a simple, elegant layout designed to make a strong first impression.
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -55,6 +57,11 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+
+- Live Demo Link(https://emmanuel-bass.github.io/Portfolio_setup/)
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -173,11 +180,6 @@ I would like to thank my mentor [Olaoye Oluwatoyin Abayomi](https://github.com/A
 
 ## 📝 License <a name="license"></a>
 
-Copyright 2025, EMMANUEL BASSEY
-Permission is hereby granted, free of charge, to any person obtaining a copy of this website and associated documentation files, to deal in the website without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the website, and to permit persons to whom the website is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the website.
-
-THE WEBSITE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE [APP TYPE] OR THE USE OR OTHER DEALINGS IN THE WEBSITE.
+This project is MIT(./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
