@@ -61,7 +61,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- Live Demo Link(https://emmanuel-bass.github.io/Portfolio_setup/)
+- [Live Demo Link](https://emmanuel-bass.github.io/Portfolio_setup/)
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -180,6 +180,6 @@ I would like to thank my mentor [Olaoye Oluwatoyin Abayomi](https://github.com/A
 
 ## 📝 License <a name="license"></a>
 
-This project is MIT(./MIT.md) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
