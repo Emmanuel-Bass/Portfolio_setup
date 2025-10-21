@@ -1,0 +1,105 @@
+body {
+  background: #f7f7f9;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  background-image: url(images/bg-images/header-shapes\ mobile@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 5px 0 50px 0;
+  border-bottom-left-radius: 150px;
+}
+
+#logo {
+  text-align: center;
+  color: #6070ff;
+  font-size: 18px;
+}
+
+nav ul li {
+  display: none;
+  color: #344563;
+  font-size: 15px;
+  text-align: center;
+  float: left;
+  padding: 5px;
+}
+
+button.menu-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-button i {
+  display: block;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 3px;
+  background: #5d68f5;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  position: sticky;
+  top: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section.intro {
+  margin: 20% 0 25% 0;
+  padding: 5%;
+  height: 80%;
+}
+
+section.intro h1 {
+  color: #091e42;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 18px;
+}
+
+section.intro h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #344563;
+  margin-bottom: 18px;
+  line-height: 28px;
+}
+
+section.intro h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #7f8cff;
+  margin-bottom: 10px;
+}
+
+menu.contact {
+  display: flex;
+  justify-content: flex-start;
+  gap: 18px;
+  list-style: none;
+  font-size: 35px;
+}
+
+menu.contact a {
+  color: #505f79;
+}
