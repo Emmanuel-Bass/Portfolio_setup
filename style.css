@@ -31,7 +31,7 @@ main {
   background-repeat: no-repeat;
   background-size: 100%;
   border-bottom-left-radius: 150px;
-  padding: 100px 20px 150px 20px;
+  padding: 100px 20px 150px 20px ;
 }
 
 #logo {
@@ -98,6 +98,7 @@ menu.contact {
   gap: 20px;
   list-style: none;
   font-size: 30px;
+  margin-bottom: 10px;
 }
 
 menu.contact a i {
