@@ -65,11 +65,6 @@ button.menu-button {
   background: #5d68f5;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 main h1 {
   font-style: normal;
   color: #091e42;
@@ -94,6 +89,7 @@ main h3 {
   color: #7f8cff;
   margin-bottom: 10px;
 }
+
 .about-myself-content {
   margin-top: 100px;
 }
