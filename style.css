@@ -132,6 +132,12 @@ details ul li {
   color: #253858;
 }
 
+details ul li img {
+  border-radius: 50%;
+  width: 48px;
+  height: auto;
+}
+
 section.works img {
   display: block;
   width: 100%;
@@ -309,10 +315,4 @@ summary::after {
 
 details[open] summary::after {
   transform: rotate(90deg);
-}
-
-details ul li img {
-  border-radius: 50%;
-  width: 48px;
-  height: auto;
 }
