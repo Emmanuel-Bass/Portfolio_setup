@@ -119,6 +119,19 @@ section.works section {
   border-radius: 16px;
 }
 
+details ul li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 8px;
+  background-color: #f7f7f9;
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #253858;
+}
+
 section.works img {
   display: block;
   width: 100%;
@@ -129,6 +142,13 @@ section.works img {
 .work-content {
   display: flex;
   flex-direction: column;
+}
+
+.about-myself h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #344563;
+  margin-bottom: 10px;
 }
 
 section.works h2 {
@@ -240,13 +260,6 @@ button.other-button {
   margin-bottom: 10px;
 }
 
-.about-myself h2 {
-  font-size: 16px;
-  font-weight: 400;
-  color: #344563;
-  margin-bottom: 10px;
-}
-
 .about-myself h3 {
   font-size: 16px;
   font-weight: 500;
@@ -296,19 +309,6 @@ summary::after {
 
 details[open] summary::after {
   transform: rotate(90deg);
-}
-
-details ul li {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-top: 8px;
-  background-color: #f7f7f9;
-  padding: 5px;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 500;
-  color: #253858;
 }
 
 details ul li img {
