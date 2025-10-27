@@ -54,6 +54,7 @@
 - **A header section that shows the logo and navigation button.**
 - **Welcome section that shows my name and what I do.**
 - **Contact section with links to my social media platforms.**
+-**Works and About Myself section to show my works and the languages, framewoorks and skills I have.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,8 +149,6 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **A snapshot section showing projects I have worked on.**
-- **An About Me section.**
 - **A form section where you can fill to get in touch with me.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
