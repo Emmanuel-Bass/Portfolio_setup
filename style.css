@@ -222,6 +222,10 @@ ul.list2 li {
   margin: 20px 0 20px 0;
 }
 
+form button {
+  align-self: flex-start;
+}
+
 .work-content button {
   align-self: self-start;
 }
@@ -280,10 +284,6 @@ button.other-button {
   line-height: 24px;
   color: #7f8cff;
   margin-bottom: 10px;
-}
-
-form button {
-  align-self: flex-start;
 }
 
 .about-myself button {
