@@ -36,7 +36,7 @@ nav ul li {
 }
 
 main {
-  background-image: url(images/bg-images/header-shapes\ mobile@2x.jpg);
+  background-image: url(./images/bg-images/header-shapes\ mobile@2x.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   border-bottom-left-radius: 134px;
@@ -330,7 +330,8 @@ details[open] summary::after {
 }
 
 section.contact-me {
-  background: #6070ff url(./images/bg-images/contact-form.png);
+  background-color: #6070ff;
+  background-image: url(./images/bg-images/contact-form.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right center;
