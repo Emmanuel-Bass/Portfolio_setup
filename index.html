@@ -49,7 +49,7 @@
 </main>
 <section class="works">
   <section class="work-content">
-    <img src="images/snapshoots/snap1.png" alt="work1">
+    <img src="./images/snapshoots/snap1.png" alt="work1">
     <h2>Tonic</h2>
     <ul class="list1">
       <li class="list1-bold">CANOPY</li>
@@ -70,7 +70,7 @@
     <button type="submit" class="other-button">See project</button>
   </section>
   <section class="work-content">
-    <img src="images/snapshoots/snap2.png" alt="work">
+    <img src="./images/snapshoots/snap2.png" alt="work">
     <h2>Multi-Post<br>
           Stories</h2>
     <ul class="list1">
@@ -92,7 +92,7 @@
     <button type="submit" class="other-button">See project</button>
   </section>
   <section class="work-content">
-    <img src="images/snapshoots/snap3.png" alt="work3">
+    <img src="./images/snapshoots/snap3.png" alt="work3">
     <h2>Tonic</h2>
     <ul class="list1">
       <li class="list1-bold">CANOPY</li>
@@ -113,7 +113,7 @@
     <button type="submit" class="other-button">See project</button>
   </section>
     <section class="work-content">
-      <img src="images/snapshoots/snap4.png" alt="work4">
+      <img src="./images/snapshoots/snap4.png" alt="work4">
       <h2>Multi-Post<br>
           Stories</h2>
       <ul class="list1">
@@ -156,13 +156,13 @@
             <summary>Languages</summary>
             <ul>
               <li>
-                <img src="images/icons/js-icon.png">JavaScript
+                <img src="./images/icons/js-icon.png">JavaScript
               </li>
               <li>
-              <img src="images/icons/html-icon.png">HTML
+              <img src="./images/icons/html-icon.png">HTML
               </li>
               <li id="last-opt">
-              <img src="images/icons/css-icon.jpg">CSS
+              <img src="./images/icons/css-icon.jpg">CSS
               </li>
             </ul>
           </details>
@@ -190,13 +190,13 @@
       </section>
       <form action="https://formspree.io/f/myzbwqlr" method="post">
         <label>
-          <input type="text" name="name" placeholder="Emmanuel Bassey" required>
+          <input type="text" minlength="3" maxlength="30" name="name" placeholder="Emmanuel Bassey" required>
         </label>
         <label>
           <input type="email" name="email" placeholder="emmanuel@gmail.com" required> 
         </label>
         <label>
-          <textarea name="message" placeholder="Write your message here..." required></textarea>
+          <textarea minlength="10" maxlength="500" name="message" placeholder="Write your message here..." required></textarea>
         </label>
         <button class="other-button" type="submit">Get in touch</button>
       </form>
