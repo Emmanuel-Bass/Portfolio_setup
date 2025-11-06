@@ -401,7 +401,7 @@ section.desktop-works {
     position: sticky;
     top: 0;
   }
-      
+
   nav {
     padding-left: 12%;
     padding-right: 12%;
@@ -473,6 +473,10 @@ section.desktop-works {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+  }
+
+  form button {
+    align-self: center;
   }
 
   section.work-content button {
@@ -551,10 +555,6 @@ section.desktop-works {
     width: 70%;
   }
 
-  section.contact-me {
-    margin-top: 0;
-  }
-
   section.about-contact {
     margin-top: 120px;
   }
@@ -587,14 +587,10 @@ section.desktop-works {
     background-image: url(./images/bg-images/contact\ form\ background\ shapes@2x.png);
     background-repeat: no-repeat;
     background-size: contain;
-  }
-
-  form button {
-    align-self: center;
+    margin-top: 0;
   }
 
   form input, textarea {
     border-radius: 0;
   }
-
 }
