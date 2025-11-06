@@ -590,8 +590,8 @@ section.desktop-works {
     margin-top: 0;
   }
 
-  form input, textarea {
+  form input,
+  textarea {
     border-radius: 0;
   }
-  
 }
