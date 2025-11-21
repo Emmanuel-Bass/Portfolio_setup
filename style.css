@@ -400,13 +400,11 @@ section.desktop-works {
 section.work-content:hover {
   cursor: pointer;
   border: 2px solid #a7aeff;
-}
-
-section.work-content:hover {
   button {
     background: #4053fc;
     color: #fff;
   }
+  
 }
 
 @media (min-width: 768px) {
