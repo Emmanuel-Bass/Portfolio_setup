@@ -112,7 +112,7 @@ section.mobile-works {
 }
 
 section.mobile-works section {
-  width: 80%;
+  width: 90%;
   margin: 100px auto 0 auto;
   background: #fff;
   padding: 12px;
@@ -262,6 +262,7 @@ button.other-button {
 .about-myself {
   display: flex;
   flex-direction: column;
+  margin-bottom: 100px;
   margin-top: 100px;
 }
 
@@ -271,7 +272,7 @@ section.about-contact {
 }
 
 .about-myself-content {
-  margin-top: 100px;
+  margin-top: 80px;
   padding: 20px;
 }
 
@@ -396,6 +397,15 @@ section.desktop-works {
   display: none;
 }
 
+section.work-content:hover {
+  border: 2px solid #a7aeff;
+  button {
+    background: #4053fc;
+    color: #fff;
+  }
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   header {
     position: sticky;
@@ -464,7 +474,7 @@ section.desktop-works {
   section.desktop-works section {
     margin-top: 100px;
     background: #fff;
-    padding: 10px;
+    padding: 18px;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
   }
@@ -540,10 +550,14 @@ section.desktop-works {
     border-radius: 8px;
   }
 
+  section.desktop-works aside {
+    padding: 24px;
+  }
+
   section.about-myself {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    align-items: baseline;
     padding-bottom: 100px;
     margin: auto;
     margin-bottom: 0;
@@ -598,12 +612,11 @@ section.desktop-works {
 
 @media (min-width: 956px) {
   section.desktop-works section {
-    width: 93%;
-    margin: 100px auto 0 auto;
+    padding: 24px;
   }
 
   section.about-myself {
-    width: 93%;
-    margin: 100px auto 0 auto;
+    padding: 24px;
+    margin-bottom: 100px;
   }
 }
