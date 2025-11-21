@@ -612,11 +612,12 @@ section.work-content:hover {
 
 @media (min-width: 956px) {
   section.desktop-works section {
-    padding: 24px;
+    width: 93%;
+    margin: 100px auto;
   }
 
   section.about-myself {
-    padding: 24px;
-    margin-bottom: 100px;
+    width: 93%;
+    margin: 0px auto;
   }
 }
