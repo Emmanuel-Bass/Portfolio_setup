@@ -398,13 +398,12 @@ section.desktop-works {
 }
 
 section.work-content:hover {
+  cursor: pointer;
   border: 2px solid #a7aeff;
   button {
     background: #4053fc;
     color: #fff;
   }
-  
-  cursor: pointer;
 }
 
 @media (min-width: 768px) {
