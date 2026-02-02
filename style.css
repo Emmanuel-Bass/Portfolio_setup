@@ -452,12 +452,12 @@ nav.open a {
   nav.open {
     display: none;
   }
-  
+
   header {
     position: sticky;
     top: 0;
   }
-
+  
   nav {
     padding-left: 12%;
     padding-right: 12%;
