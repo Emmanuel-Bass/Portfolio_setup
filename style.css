@@ -449,7 +449,7 @@ nav.open a {
 }
 
 @media (min-width: 768px) {
-  nav.open {
+  nav.open ul {
     display: none;
   }
 
