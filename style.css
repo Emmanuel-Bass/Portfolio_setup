@@ -449,6 +449,10 @@ nav.open a {
 }
 
 @media (min-width: 768px) {
+  nav.open {
+    display: none;
+  }
+  
   header {
     position: sticky;
     top: 0;
