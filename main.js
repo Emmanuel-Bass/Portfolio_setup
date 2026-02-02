@@ -14,4 +14,11 @@ menuLinks.forEach(link => {
     });
 });
 
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    nav.classList.remove("open");
+    menuButton.classList.remove("open");
+  }
+});
+
 menuButton.addEventListener("click", toggleMenu);
