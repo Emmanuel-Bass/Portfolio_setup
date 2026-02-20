@@ -63,14 +63,6 @@ main {
   background: #67798e;
 }
 
-.mobile-popup-closeBtn i:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.mobile-popup-closeBtn i:nth-child(2) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
 .desktop-popup-closeBtn i {
   display: block;
   justify-content: space-evenly;
@@ -79,18 +71,26 @@ main {
   background: #67798e;
 }
 
+menu.contact a i {
+  color: #505f79;
+  width: 20px;
+  height: 20px;
+}
+
+.mobile-popup-closeBtn i:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-popup-closeBtn i:nth-child(2) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 .desktop-popup-closeBtn i:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
 
 .desktop-popup-closeBtn i:nth-child(2) {
   transform: rotate(-45deg) translate(5px, -5px);
-}
-
-menu.contact a i {
-  color: #505f79;
-  width: 20px;
-  height: 20px;
 }
 
 #menu-button i {
