@@ -420,17 +420,6 @@ section.work-content:hover {
   }
 }
 
-nav ul {
-  display: block;
-}
-
-details ul {
-  display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
-  gap: 20px;
-}
-
 nav.open ul {
   display: flex;
   flex-direction: column;
@@ -476,6 +465,10 @@ nav.open a {
 
   #menu-button {
     display: none;
+  }
+
+  nav ul {
+    display: block;
   }
 
   nav ul li {
@@ -635,6 +628,13 @@ nav.open a {
     margin: 0;
     padding: 0;
     align-self: center;
+  }
+
+  details ul {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 20px;
   }
 
   details ul li {
