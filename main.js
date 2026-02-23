@@ -33,19 +33,11 @@ const mobilePopupLine = document.createElement('hr');
 const mobilePopupButtons = document.createElement('section');
 mobilePopupButtons.classList.add('live-btns');
 const mobilePopupLiveBtn = document.createElement('button');
-mobilePopupLiveBtn.textContent = 'See live';
-const liveIconImage = document.createElement('img');
-liveIconImage.src = './images/icons/Icon - Export.svg';
-mobilePopupLiveBtn.appendChild(liveIconImage);
-liveIconImage.classList.add('btn-icon');
+mobilePopupLiveBtn.innerHTML = 'See live<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Icon" fill-rule="evenodd" clip-rule="evenodd" d="M5 12C5 8.13401 8.13401 5 12 5C12.5523 5 13 4.55228 13 4C13 3.44772 12.5523 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 11.4477 20.5523 11 20 11C19.4477 11 19 11.4477 19 12C19 15.866 15.866 19 12 19C8.13401 19 5 15.866 5 12ZM16 3C15.4477 3 15 3.44772 15 4C15 4.55228 15.4477 5 16 5H17.5858L11.2929 11.2929C10.9024 11.6834 10.9024 12.3166 11.2929 12.7071C11.6834 13.0976 12.3166 13.0976 12.7071 12.7071L19 6.41421V8C19 8.55228 19.4477 9 20 9C20.5523 9 21 8.55228 21 8V4C21 3.44772 20.5523 3 20 3H16Z" fill="currentColor"/></svg>';
 mobilePopupLiveBtn.classList.add('live-btn');
 const mobilePopupSourceBtn = document.createElement('button');
 mobilePopupSourceBtn.classList.add('live-btn');
-mobilePopupSourceBtn.textContent = 'See source';
-const sourceIconImage = document.createElement('img');
-sourceIconImage.src = './images/icons/Icon -GitHub.svg';
-sourceIconImage.classList.add('btn-icon');
-mobilePopupSourceBtn.appendChild(sourceIconImage);
+mobilePopupSourceBtn.innerHTML = 'See source<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M17.9989 7.46114C17.9989 6.32124 17.6329 5.25043 16.9342 4.31779C17.2004 3.41969 17.2669 2.27979 17.2004 0.967185C17.1671 0.414508 16.7345 0 16.2022 0C15.9028 0 13.3741 0.0345423 11.9101 1.38169C10.6458 1.1399 9.31495 1.1399 8.01736 1.38169C6.58667 0.0345423 4.05802 0 3.7253 0C3.19296 0 2.76042 0.414508 2.72715 0.967185C2.62734 2.27979 2.72715 3.41969 2.99333 4.31779C2.29462 5.28497 1.92863 6.35579 1.92863 7.46114C1.92863 9.8791 3.7253 12.0553 6.45358 13.0915C6.35377 13.2988 6.28723 13.5406 6.22068 13.7824C3.32604 13.4715 1.9619 10.7427 1.89536 10.639C1.66246 10.1209 1.06357 9.91364 0.56449 10.19C0.0654144 10.4318 -0.134216 11.0535 0.131958 11.5717C0.198501 11.7444 2.02845 15.4404 6.05432 15.8549V18.9637C6.05432 19.5509 6.48686 20 7.05248 20H12.875C13.4406 20 13.8732 19.5509 13.8732 18.9637V14.8532C13.8732 14.2314 13.7401 13.6442 13.5072 13.1261C16.2022 12.0553 17.9989 9.91364 17.9989 7.46114Z" fill="currentColor"/>';
 mobilePopupButtons.append(mobilePopupLiveBtn, mobilePopupSourceBtn);
 mobilePopupWindow.append(mobilePopupWindowHead, mobilePopupClientRoleYear, mobilePopupImage, mobilePopupDesc, mobilePopupTechList, mobilePopupLine, mobilePopupButtons);
 mobilePopup.appendChild(mobilePopupWindow);
@@ -69,8 +61,8 @@ const openMobilePopup = (project) => {
       mobilePopupTechList.appendChild(li);
     });
 
-    liveBtn.onclick = () => window.open(project.liveLink, '_blank');
-    sourceBtn.onclick = () => window.open(project.sourceLink, '_blank');
+    mobilePopupLiveBtn.onclick = () => window.open(project.liveLink, '_blank');
+    mobilePopupSourceBtn.onclick = () => window.open(project.sourceLink, '_blank');
   };
 
 const desktopPopup = document.querySelector('.desktop-popup-overlay');
@@ -110,24 +102,15 @@ desktopPopupTechList.classList.add('list2');
 const desktopPopupButtons = document.createElement('section');
 desktopPopupButtons.classList.add('live-btns');
 const desktopPopupLiveBtn = document.createElement('button');
-desktopPopupLiveBtn.textContent = 'See live';
+desktopPopupLiveBtn.innerHTML = 'See live<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Icon" fill-rule="evenodd" clip-rule="evenodd" d="M5 12C5 8.13401 8.13401 5 12 5C12.5523 5 13 4.55228 13 4C13 3.44772 12.5523 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 11.4477 20.5523 11 20 11C19.4477 11 19 11.4477 19 12C19 15.866 15.866 19 12 19C8.13401 19 5 15.866 5 12ZM16 3C15.4477 3 15 3.44772 15 4C15 4.55228 15.4477 5 16 5H17.5858L11.2929 11.2929C10.9024 11.6834 10.9024 12.3166 11.2929 12.7071C11.6834 13.0976 12.3166 13.0976 12.7071 12.7071L19 6.41421V8C19 8.55228 19.4477 9 20 9C20.5523 9 21 8.55228 21 8V4C21 3.44772 20.5523 3 20 3H16Z" fill="currentColor"/></svg>'
 desktopPopupLiveBtn.classList.add('live-btn');
 const desktopPopupSourceBtn = document.createElement('button');
 desktopPopupSourceBtn.classList.add('live-btn');
-desktopPopupSourceBtn.textContent = 'See source';
-desktopPopupButtons.append(desktopPopupLiveBtn, desktopPopupSourceBtn);
+desktopPopupSourceBtn.innerHTML = 'See source<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M20.9989 9.46114C20.9989 8.32124 20.6329 7.25043 19.9342 6.31779C20.2004 5.41969 20.2669 4.27979 20.2004 2.96718C20.1671 2.41451 19.7345 2 19.2022 2C18.9028 2 16.3741 2.03454 14.9101 3.38169C13.6458 3.1399 12.315 3.1399 11.0174 3.38169C9.58667 2.03454 7.05802 2 6.7253 2C6.19296 2 5.76042 2.41451 5.72715 2.96718C5.62734 4.27979 5.72715 5.41969 5.99333 6.31779C5.29462 7.28497 4.92863 8.35579 4.92863 9.46114C4.92863 11.8791 6.7253 14.0553 9.45358 15.0915C9.35377 15.2988 9.28723 15.5406 9.22068 15.7824C6.32604 15.4715 4.9619 12.7427 4.89536 12.639C4.66246 12.1209 4.06357 11.9136 3.56449 12.19C3.06541 12.4318 2.86578 13.0535 3.13196 13.5717C3.1985 13.7444 5.02845 17.4404 9.05432 17.8549V20.9637C9.05432 21.5509 9.48686 22 10.0525 22H15.875C16.4406 22 16.8732 21.5509 16.8732 20.9637V16.8532C16.8732 16.2314 16.7401 15.6442 16.5072 15.1261C19.2022 14.0553 20.9989 11.9136 20.9989 9.46114Z" fill="currentColor"/></svg>';desktopPopupButtons.append(desktopPopupLiveBtn, desktopPopupSourceBtn);
 desktopPopupTechBtn.append(desktopPopupTechList, desktopPopupButtons);
 desktopPopupParaTechBtn.append(desktopPopupDesc, desktopPopupTechBtn);
 desktopPopupWindow.append(desktopPopupHead, desktopPopupClientRoleYear, desktopPopupImage, desktopPopupParaTechBtn);
 desktopPopup.appendChild(desktopPopupWindow);
-const shareIcon = document.createElement('img');
-shareIcon.src = './images/icons/Icon - Export.svg';
-shareIcon.classList.add('btn-icon');
-desktopPopupLiveBtn.appendChild(shareIcon);
-const githubIcon = document.createElement('img');
-githubIcon.src = './images/icons/Icon -GitHub.svg';
-githubIcon.classList.add('btn-icon');
-desktopPopupSourceBtn.appendChild(githubIcon);
 
 const openDesktopPopup = (project) => {
     desktopPopup.style.display = 'block';
