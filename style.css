@@ -267,7 +267,7 @@ li.list1-other {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
-  flex: 3;
+  flex: 2;
 }
 
 section.mobile-works p {
@@ -567,7 +567,8 @@ hr {
 }
 
 .live-btn {
-  display: flex;
+  display: inline-flex;
+  gap: 6px;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -582,9 +583,15 @@ hr {
   background: #fff;
 }
 
-img.btn-icon {
-  height: 20px;
-  width: 20px;
+.live-btn:hover {
+  cursor: pointer;
+  background: #6070ff;
+  color: #fff;
+}
+
+.live-btn:active {
+  background: #2230d2;
+  color: #fff;
 }
 
 @media (min-width: 768px) {
