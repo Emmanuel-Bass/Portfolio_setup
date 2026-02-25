@@ -1,4 +1,5 @@
 const menuButton = document.getElementById('menu-button');
+menuButton.addEventListener("click", toggleMenu);
 const nav = document.querySelector('nav');
 const menuLinks = document.querySelectorAll("nav ul li a");
 
@@ -20,5 +21,3 @@ window.addEventListener("resize", () => {
     menuButton.classList.remove("open");
   }
 });
-
-menuButton.addEventListener("click", toggleMenu);
