@@ -405,7 +405,7 @@ form.addEventListener ('submit', function (e) {
 
   const emailValue = emailInput.value;
 
-  if (emailValue.textContent !== emailValue.toLowerCase()) {
+  if (emailValue !== emailValue.toLowerCase()) {
     errorMsg.textContent = 'Email must be in lowercase';
     errorMsg.classList.add('errorMsg');
     emailInput.focus();
@@ -413,4 +413,34 @@ form.addEventListener ('submit', function (e) {
     errorMsg.textContent = '';
     form.submit();
   }
+})
+
+const userName = document.getElementById('userName');
+const userEmail = document.getElementById('email');
+const userMessage = document.getElementById('userMessage');
+
+const savedUserData = JSON.parse(localStorage.getItem("savedUserData"));
+
+const userData = { ...savedUserData };
+
+userName.value = savedUserData.name || '';
+userEmail.value = savedUserData.email || '';
+userMessage.value = savedUserData.message || '';
+
+userName.addEventListener('input', () => {
+  userData.name = userName.value;
+  const currentData = JSON.parse(localStorage.getItem("savedUserData")) || {};
+  localStorage.setItem("savedUserData", JSON.stringify({...currentData, ...userData}));
+})
+
+userEmail.addEventListener('input', () => {
+  userData.email = userEmail.value;
+  const currentData = JSON.parse(localStorage.getItem("savedUserData")) || {};
+  localStorage.setItem("savedUserData", JSON.stringify({...currentData, ...userData}));
+})
+
+userMessage.addEventListener('input', () => {
+  userData.message = userMessage.value;
+  const currentData = JSON.parse(localStorage.getItem("savedUserData")) || {};
+  localStorage.setItem("savedUserData", JSON.stringify({...currentData, ...userData}));
 })
