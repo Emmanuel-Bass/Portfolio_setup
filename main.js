@@ -415,6 +415,11 @@ form.addEventListener ('submit', function (e) {
   }
 })
 
+emailInput.addEventListener('input', () => {
+  errorMsg.textContent = '';
+  errorMsg.classList.remove('errorMsg');
+})
+
 const userName = document.getElementById('userName');
 const userEmail = document.getElementById('email');
 const userMessage = document.getElementById('userMessage');
