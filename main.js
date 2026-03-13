@@ -424,28 +424,28 @@ const userName = document.getElementById('userName');
 const userEmail = document.getElementById('email');
 const userMessage = document.getElementById('userMessage');
 
-const savedUserData = JSON.parse(localStorage.getItem("savedUserData"));
-
+const savedUserData = JSON.parse(localStorage.getItem("savedUserData")) || {};
 const userData = { ...savedUserData };
 
-userName.value = savedUserData.name || '';
-userEmail.value = savedUserData.email || '';
-userMessage.value = savedUserData.message || '';
+userName.value = userData.name || '';
+userEmail.value = userData.email || '';
+userMessage.value = userData.message || '';
+
+const saveData = () => {
+  localStorage.setItem("savedUserData", JSON.stringify(userData));
+}
 
 userName.addEventListener('input', () => {
   userData.name = userName.value;
-  const currentData = JSON.parse(localStorage.getItem("savedUserData")) || {};
-  localStorage.setItem("savedUserData", JSON.stringify({...currentData, ...userData}));
-})
+  saveData();
+});
 
 userEmail.addEventListener('input', () => {
   userData.email = userEmail.value;
-  const currentData = JSON.parse(localStorage.getItem("savedUserData")) || {};
-  localStorage.setItem("savedUserData", JSON.stringify({...currentData, ...userData}));
-})
+  saveData();
+});
 
 userMessage.addEventListener('input', () => {
   userData.message = userMessage.value;
-  const currentData = JSON.parse(localStorage.getItem("savedUserData")) || {};
-  localStorage.setItem("savedUserData", JSON.stringify({...currentData, ...userData}));
-})
+  saveData();
+});
