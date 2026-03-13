@@ -405,7 +405,7 @@ form.addEventListener ('submit', function (e) {
 
   const emailValue = emailInput.value;
 
-  if (emailValue.textContent !== emailValue.toLowerCase()) {
+  if (emailValue !== emailValue.toLowerCase()) {
     errorMsg.textContent = 'Email must be in lowercase';
     errorMsg.classList.add('errorMsg');
     emailInput.focus();
@@ -414,3 +414,38 @@ form.addEventListener ('submit', function (e) {
     form.submit();
   }
 })
+
+emailInput.addEventListener('input', () => {
+  errorMsg.textContent = '';
+  errorMsg.classList.remove('errorMsg');
+})
+
+const userName = document.getElementById('userName');
+const userEmail = document.getElementById('email');
+const userMessage = document.getElementById('userMessage');
+
+const savedUserData = JSON.parse(localStorage.getItem("savedUserData")) || {};
+const userData = { ...savedUserData };
+
+userName.value = userData.name || '';
+userEmail.value = userData.email || '';
+userMessage.value = userData.message || '';
+
+const saveData = () => {
+  localStorage.setItem("savedUserData", JSON.stringify(userData));
+}
+
+userName.addEventListener('input', () => {
+  userData.name = userName.value;
+  saveData();
+});
+
+userEmail.addEventListener('input', () => {
+  userData.email = userEmail.value;
+  saveData();
+});
+
+userMessage.addEventListener('input', () => {
+  userData.message = userMessage.value;
+  saveData();
+});
