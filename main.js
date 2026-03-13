@@ -395,3 +395,22 @@ window.addEventListener("resize", () => {
     document.body.style.overflow = '';
   }
 });
+
+const form = document.getElementById('form');
+const emailInput = document.getElementById('email')
+const errorMsg = document.getElementById('errorMsg');
+
+form.addEventListener ('submit', function (e) {
+  e.preventDefault();
+
+  const emailValue = emailInput.value;
+
+  if (emailValue.textContent !== emailValue.toLowerCase()) {
+    errorMsg.textContent = 'Email must be in lowercase';
+    errorMsg.classList.add('errorMsg');
+    emailInput.focus();
+  } else {
+    errorMsg.textContent = '';
+    form.submit();
+  }
+})
